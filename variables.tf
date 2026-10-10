@@ -33,7 +33,7 @@ variable "log_analytics_sku" {
 variable "web_app_name" {
   description = "Nombre de la aplicación web del entorno QA"
   type        = string
-  default     = "app-utvt-integradora-web-qa-mxc-001"
+  default     = "app-utvt-integradora-web-qa-wus3-001"
 }
 
 variable "project" {
@@ -56,13 +56,13 @@ variable "environment" {
 variable "location" {
   description = "Región de Azure donde se despliegan los recursos"
   type        = string
-  default     = "mexicocentral"
+  default     = "westus3"
 }
 
 variable "region_abbreviation" {
   description = "Abreviatura de la región para los nombres de recursos"
   type        = string
-  default     = "mxc"
+  default     = "wus3"
 }
 
 variable "instance" {

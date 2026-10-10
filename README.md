@@ -6,9 +6,13 @@ Recursos: Resource Group, Log Analytics, Application Insights, App Service Plan 
 - Terraform >= 1.9
 - Azure CLI
 
+## Región
+La suscripción **Azure for Students** solo permite desplegar en `westus`, `eastus`, `eastus2`, `centralus` y `westus3` (política *Allowed resource deployment regions*). Se usa `westus3`, la más cercana a México. `mexicocentral` devuelve `403 RequestDisallowedByAzure`.
+
 ## 1. Autenticación
 ```bash
 az login
+cp terraform.tfvars.example terraform.tfvars
 az account show --query id -o tsv   # copia este valor a subscription_id en terraform.tfvars
 ```
 
