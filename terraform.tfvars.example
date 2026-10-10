@@ -1,0 +1,20 @@
+# Reemplaza con tu ID de suscripción: az account show --query id -o tsv
+subscription_id = "00000000-0000-0000-0000-000000000000"
+
+project             = "utvt-integradora"
+environment         = "qa"
+location            = "westus3"
+region_abbreviation = "wus3"
+instance            = "001"
+
+service_plan_sku_name = "F1"
+log_analytics_sku     = "PerGB2018"
+application_type      = "web"
+node_version          = "24-lts"
+
+# Debe ser único a nivel global (forma parte de *.azurewebsites.net)
+web_app_name = "app-utvt-integradora-web-qa-wus3-<matricula>"
+
+extra_tags = {
+  owner = "equipo-integradora"
+}
